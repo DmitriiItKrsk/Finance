@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
 
-namespace Finance
+namespace Finance.Core
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,12 +24,6 @@ namespace Finance
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        //Иначе не закрывается
-        private void MetroWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Application.Current.Shutdown(0);
         }
     }
 }
